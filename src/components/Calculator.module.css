@@ -1,0 +1,83 @@
+.main-container{
+  display: flex;
+  width: 400px;
+  height: 550px;
+  flex-direction: column;
+}
+.grid-container1{
+ flex: 1.45;
+ width: 100%;
+    display: grid;
+grid-template-rows: 1fr 1.1fr;
+  }
+  .grid-container {
+  width:100%;
+  flex: 4;
+display: grid;
+grid-template-rows: repeat(5, 1fr);
+grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item0 {
+  font-size: 1.1rem;
+text-align: start;
+background-color: #444;
+color: orange;
+
+}
+.grid-item {
+  font-size: 1.3rem;
+text-align: end;
+background-color: #444;
+color: white;
+
+}
+.grid-item1 {
+border: 1px solid black;
+text-align: center;
+padding: 30px;
+color: white;
+}
+.grid-item1:hover{
+background-color: aliceblue;
+color: black;
+cursor: pointer;
+}
+.grid-item1.number{
+background-color: gray;
+}
+.grid-item1.operator{
+background-color: #bbb5b5;
+}
+.grid-item1.equal{
+background-color: #276AB3;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+}
+.grid-item1.clear{
+background-color: red;
+}
+.grid-item1.number:hover{
+background-color: aliceblue;
+}
+.grid-item1.operator:hover{
+background-color: aliceblue;
+}
+.grid-item1.equal:hover{
+background-color: aliceblue;
+}
+.grid-item1.clear:hover{
+background-color: aliceblue;
+}
+
+.grid-item1.row-span-2 {
+
+grid-row: span 2;
+}
+
+.grid-item1.column-span-2 {
+
+grid-column: span 2;
+}
